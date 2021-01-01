@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SongGirdCell" customModule="DJCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="287"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="234" height="287"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image5" translatesAutoresizingMaskIntoConstraints="NO" id="ETU-Ti-8Cl">
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="234"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ETU-Ti-8Cl" secondAttribute="height" id="QPk-AF-Wbq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brainwash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhZ-W0-dcM">
+                        <rect key="frame" x="0.0" y="242" width="234" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgotten Society" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zX-Yu-CnC">
+                        <rect key="frame" x="0.0" y="265" width="234" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ETU-Ti-8Cl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="119-kk-kJ8"/>
+                <constraint firstItem="1zX-Yu-CnC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ADf-LO-saV"/>
+                <constraint firstAttribute="trailing" secondItem="ETU-Ti-8Cl" secondAttribute="trailing" id="DIc-UM-6dJ"/>
+                <constraint firstAttribute="trailing" secondItem="1zX-Yu-CnC" secondAttribute="trailing" id="LsE-Bh-r0c"/>
+                <constraint firstItem="lhZ-W0-dcM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NWA-fI-zwe"/>
+                <constraint firstAttribute="trailing" secondItem="lhZ-W0-dcM" secondAttribute="trailing" id="X2q-Co-YV2"/>
+                <constraint firstItem="lhZ-W0-dcM" firstAttribute="top" secondItem="ETU-Ti-8Cl" secondAttribute="bottom" constant="8" id="nIJ-2o-Sdj"/>
+                <constraint firstItem="1zX-Yu-CnC" firstAttribute="top" secondItem="lhZ-W0-dcM" secondAttribute="bottom" constant="5" id="pi2-i8-sfJ"/>
+                <constraint firstItem="ETU-Ti-8Cl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wjg-nI-oPf"/>
+            </constraints>
+            <size key="customSize" width="234" height="287"/>
+            <connections>
+                <outlet property="imgImage" destination="ETU-Ti-8Cl" id="5mv-Yt-XtZ"/>
+                <outlet property="lbSubTitle" destination="1zX-Yu-CnC" id="jKx-vQ-0U6"/>
+                <outlet property="lbTitle" destination="lhZ-W0-dcM" id="r2W-mu-GLr"/>
+            </connections>
+            <point key="canvasLocation" x="271.01449275362319" y="187.16517857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image5" width="64" height="64"/>
+    </resources>
+</document>

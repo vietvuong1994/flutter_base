@@ -1,0 +1,318 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AnimatedTextInput (0.5.5)
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - CodableAlamofire (1.1.2):
+    - Alamofire (~> 4.0)
+  - CodableExtensions (0.2.1)
+  - CoreAnimator (2.1.4)
+  - CouchbaseLite-Swift (2.6.4)
+  - Crashlytics (3.10.9):
+    - Fabric (~> 1.7.13)
+  - CropViewController (2.5.5)
+  - DataCompression (3.6.0)
+  - DeviceKit (1.3.2)
+  - Fabric (1.7.13)
+  - FBSDKCoreKit (8.2.0):
+    - FBSDKCoreKit/Basics (= 8.2.0)
+    - FBSDKCoreKit/Core (= 8.2.0)
+  - FBSDKCoreKit/Basics (8.2.0)
+  - FBSDKCoreKit/Core (8.2.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (8.2.0):
+    - FBSDKLoginKit/Login (= 8.2.0)
+  - FBSDKLoginKit/Login (8.2.0):
+    - FBSDKCoreKit (~> 8.2.0)
+  - Firebase (7.3.0):
+    - Firebase/Core (= 7.3.0)
+  - Firebase/Analytics (7.3.0):
+    - Firebase/Core
+  - Firebase/Auth (7.3.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 7.3.0)
+  - Firebase/Core (7.3.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 7.3.0)
+  - Firebase/CoreOnly (7.3.0):
+    - FirebaseCore (= 7.3.0)
+  - FirebaseAnalytics (7.3.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement (= 7.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - FirebaseAuth (7.3.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
+  - FirebaseCore (7.3.0):
+    - FirebaseCoreDiagnostics (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.3.0):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30906.0)
+  - FirebaseInstallations (7.3.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - PromisesObjC (~> 1.2)
+  - GoogleAppMeasurement (7.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - GoogleDataTransport (8.1.0):
+    - nanopb (~> 2.30906.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.1.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.1.1):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (7.1.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.1.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.1.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.1.1)"
+  - GoogleUtilities/Reachability (7.1.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.1.1):
+    - GoogleUtilities/Logger
+  - GTMAppAuth (1.1.0):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher (~> 1.4)
+  - GTMSessionFetcher (1.5.0):
+    - GTMSessionFetcher/Full (= 1.5.0)
+  - GTMSessionFetcher/Core (1.5.0)
+  - GTMSessionFetcher/Full (1.5.0):
+    - GTMSessionFetcher/Core (= 1.5.0)
+  - KeychainSwift (10.0.0)
+  - Kingfisher (5.4.0)
+  - LNPopupController (2.10.26)
+  - MarqueeLabel (4.0.5)
+  - MaterialComponents/Ink (55.0.4):
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (55.0.4)
+  - MaterialComponents/private/Application (55.0.4)
+  - MaterialComponents/private/Math (55.0.4)
+  - MaterialComponents/private/ThumbTrack (55.0.4):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/ShadowElevations (55.0.4)
+  - MaterialComponents/ShadowLayer (55.0.4):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Slider (55.0.4):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/ThumbTrack
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Typography (55.0.4):
+    - MaterialComponents/private/Application
+  - MDFInternationalization (2.0.0)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (1.1.0)
+  - MXSegmentedControl (1.1.0)
+  - MXSegmentedPager (4.0.0):
+    - MXPagerView (~> 0.2)
+    - MXParallaxHeader (~> 1.0)
+    - MXSegmentedControl (~> 1.1)
+  - nanopb (2.30906.0):
+    - nanopb/decode (= 2.30906.0)
+    - nanopb/encode (= 2.30906.0)
+  - nanopb/decode (2.30906.0)
+  - nanopb/encode (2.30906.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - PKHUD (5.2.1)
+  - PromisesObjC (1.2.11)
+  - RimhTypingLetters (0.1.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - Sheeeeeeeeet (0.9.9)
+  - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.3.0)
+  - TYCyclePagerView (1.2.0)
+  - UIScrollView-InfiniteScroll (1.1.0)
+  - VSInfiniteCarousel (0.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AnimatedTextInput (~> 0.5.2)
+  - CodableAlamofire (~> 1.1.0)
+  - CodableExtensions (~> 0.2.1)
+  - CoreAnimator (~> 2.1.3)
+  - CouchbaseLite-Swift (~> 2.6.0)
+  - Crashlytics (~> 3.10.1)
+  - CropViewController
+  - DataCompression
+  - DeviceKit (~> 1.3.0)
+  - FBSDKLoginKit
+  - Firebase
+  - Firebase/Analytics
+  - Firebase/Auth
+  - Firebase/Core
+  - GoogleSignIn
+  - KeychainSwift (~> 10.0)
+  - Kingfisher (~> 5.4.0)
+  - LNPopupController
+  - MarqueeLabel (~> 4.0.0)
+  - MaterialComponents/Slider (~> 55.0.4)
+  - MXSegmentedPager
+  - NVActivityIndicatorView (~> 4.7.0)
+  - PKHUD (~> 5.2.1)
+  - RimhTypingLetters (~> 0.1.1)
+  - RxCocoa
+  - RxSwift
+  - SDWebImage (~> 4.0)
+  - Sheeeeeeeeet (~> 0.9.4)
+  - SnapKit (~> 5.0.0)
+  - SVProgressHUD
+  - SwiftyJSON (~> 4.0)
+  - TYCyclePagerView
+  - UIScrollView-InfiniteScroll (~> 1.1.0)
+  - VSInfiniteCarousel (~> 0.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AnimatedTextInput
+    - AppAuth
+    - CodableAlamofire
+    - CodableExtensions
+    - CoreAnimator
+    - CouchbaseLite-Swift
+    - Crashlytics
+    - CropViewController
+    - DataCompression
+    - DeviceKit
+    - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseInstallations
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleSignIn
+    - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - KeychainSwift
+    - Kingfisher
+    - LNPopupController
+    - MarqueeLabel
+    - MaterialComponents
+    - MDFInternationalization
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedControl
+    - MXSegmentedPager
+    - nanopb
+    - NVActivityIndicatorView
+    - PKHUD
+    - PromisesObjC
+    - RimhTypingLetters
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - Sheeeeeeeeet
+    - SnapKit
+    - SVProgressHUD
+    - SwiftyJSON
+    - TYCyclePagerView
+    - UIScrollView-InfiniteScroll
+    - VSInfiniteCarousel
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AnimatedTextInput: aadbdfa5a538a03cc9fbea700b43d2bb21a5d132
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  CodableAlamofire: b7adfb2e5e980392014b4b3f3b8b62c01b9de4aa
+  CodableExtensions: dfc7a008a5951e3667ffdad5b43f1e9ed87213a7
+  CoreAnimator: 8606ef401a0c4fff922aa8fca70d6e1191f7f746
+  CouchbaseLite-Swift: dbd25d6d0b385c38294fee767e7d6ed172e790ba
+  Crashlytics: f836e1d564b4492da572b056ce7ea0476c53ec4b
+  CropViewController: bd3ff11eeeaadc1e267bb9c3f3e9ee67a52d3285
+  DataCompression: 06628f9c807b6f152e0da37635633f62fc51dc77
+  DeviceKit: f763607473cdd286a69d1957de099bdbd8391db5
+  Fabric: e88a14d80173bcf3db4eac866c83619f2894183d
+  FBSDKCoreKit: 4afd6ff53d8133a433dbcda44451c9498f8c6ce4
+  FBSDKLoginKit: 7181765f2524d7ebf82d9629066c8e6caafc99d0
+  Firebase: 26223c695fe322633274198cb19dca8cb7e54416
+  FirebaseAnalytics: 2580c2d62535ae7b644143d48941fcc239ea897a
+  FirebaseAuth: c224a0cf1afa0949bd5c7bfcf154b4f5ce8ddef2
+  FirebaseCore: 4d3c72622ce0e2106aaa07bb4b2935ba2c370972
+  FirebaseCoreDiagnostics: d50e11039e5984d92c8a512be2395f13df747350
+  FirebaseInstallations: 971df89b48ae5ee4cc2bf6935f3857a525d28550
+  GoogleAppMeasurement: 8d3c0aeede16ab7764144b5a4ca8e1d4323841b7
+  GoogleDataTransport: 116c84c4bdeb76be2a7a46de51244368f9794eab
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GoogleUtilities: 3dc4ff0d5e4840e2fa8eef0889620e8c33d4218c
+  GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  KeychainSwift: f9f7910449a0c0fd2cabc889121530dd2c477c33
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+  LNPopupController: bbd6f48e4540f9c83b6fd7a61653eed0f0726b3a
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  MaterialComponents: 059f649876b2e1ed6a623ba689175493422cc7cd
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: de3c867e10ba46e8f6e20c8ee1f2a910372b3b94
+  MXSegmentedControl: f39e46199a52cbc03b1c845e150215119f2542f5
+  MXSegmentedPager: 527ee76513c96e6607eebe473fe49b7ab4971616
+  nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  RimhTypingLetters: 914370e62a8280bcfc44bbcd887323bbaa0df609
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  Sheeeeeeeeet: 5a91e04a35709e70c6ec1943a269764185f9a9df
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
+  VSInfiniteCarousel: 8249a9b2fcb0f28144aa1f64dc63824dcd3d8e20
+
+PODFILE CHECKSUM: c1d3bd601fe03f8ba82e0cf39302f680896b6923
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InsertImagePopUpVC" customModule="FastChord_Develop" customModuleProvider="target">
+            <connections>
+                <outlet property="heightOfTableView" destination="k0K-vs-9ZY" id="PlQ-Ip-GYs"/>
+                <outlet property="registerTablevView" destination="PpD-7C-fr5" id="eyz-Oy-Kyx"/>
+                <outlet property="tapBackView" destination="KDa-RJ-X1R" id="Unc-m4-zXj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcF-3i-tnB">
+                    <rect key="frame" x="0.0" y="712" width="414" height="184"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PpD-7C-fr5">
+                    <rect key="frame" x="0.0" y="712" width="414" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="k0K-vs-9ZY"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDa-RJ-X1R">
+                    <rect key="frame" x="0.0" y="44" width="414" height="668"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KDa-RJ-X1R" secondAttribute="trailing" id="1CF-lp-Osv"/>
+                <constraint firstItem="XcF-3i-tnB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3TA-Pu-inE"/>
+                <constraint firstItem="PpD-7C-fr5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H3p-cg-DxV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PpD-7C-fr5" secondAttribute="trailing" id="Nad-LN-ohP"/>
+                <constraint firstItem="KDa-RJ-X1R" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rh5-bI-oyw"/>
+                <constraint firstAttribute="bottom" secondItem="XcF-3i-tnB" secondAttribute="bottom" id="Vs3-gi-2dL"/>
+                <constraint firstItem="XcF-3i-tnB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="csj-0B-ZkX"/>
+                <constraint firstItem="PpD-7C-fr5" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="hSp-GA-6GY"/>
+                <constraint firstItem="PpD-7C-fr5" firstAttribute="top" secondItem="KDa-RJ-X1R" secondAttribute="bottom" id="jEX-F2-tO9"/>
+                <constraint firstItem="XcF-3i-tnB" firstAttribute="top" secondItem="PpD-7C-fr5" secondAttribute="top" id="m3V-Dv-9Rh"/>
+                <constraint firstItem="KDa-RJ-X1R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zol-dB-AEv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
+        </view>
+    </objects>
+</document>

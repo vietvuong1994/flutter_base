@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="ListArtistCell" customModule="DJCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image5" translatesAutoresizingMaskIntoConstraints="NO" id="5pv-Z8-wHN" customClass="CircularImageView" customModule="DJCloud" customModuleProvider="target">
+                        <rect key="frame" x="16" y="5" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5pv-Z8-wHN" secondAttribute="height" id="Nhm-EN-pXN"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdE-HF-lHr">
+                        <rect key="frame" x="287" y="17" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="U1R-l2-nGT"/>
+                        </constraints>
+                        <state key="normal" image="iconFavorite"/>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="DXb-D5-svE">
+                        <rect key="frame" x="74" y="9.5" width="169" height="37.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Havana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8L-lK-Ij7">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camila Cabello ft. Young Thug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuE-6T-jPK">
+                                <rect key="frame" x="0.0" y="23" width="169" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DXb-D5-svE" firstAttribute="leading" secondItem="5pv-Z8-wHN" secondAttribute="trailing" constant="12" id="1Nu-Gt-fcU"/>
+                    <constraint firstItem="DXb-D5-svE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="E7N-cn-taz"/>
+                    <constraint firstAttribute="bottom" secondItem="5pv-Z8-wHN" secondAttribute="bottom" constant="5" id="KVU-fy-Ekp"/>
+                    <constraint firstItem="5pv-Z8-wHN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TpN-Is-e1Y"/>
+                    <constraint firstItem="FdE-HF-lHr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VkH-hg-p5j"/>
+                    <constraint firstItem="5pv-Z8-wHN" firstAttribute="width" secondItem="5pv-Z8-wHN" secondAttribute="height" id="Ze8-bo-LJm"/>
+                    <constraint firstItem="5pv-Z8-wHN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jba-jI-sDG"/>
+                    <constraint firstAttribute="trailing" secondItem="FdE-HF-lHr" secondAttribute="trailing" constant="16" id="wa3-e3-5A3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="15.217391304347828" y="67.633928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconFavorite" width="16" height="16"/>
+        <image name="image5" width="64" height="64"/>
+    </resources>
+</document>

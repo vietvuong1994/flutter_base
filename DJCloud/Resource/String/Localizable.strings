@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  DJCloud
+
+  Created by kien on 12/22/20.
+  Copyright © 2020 kienpt. All rights reserved.
+*/
+"pick_image_form_library" = "Select from gallery";
+"new_photo_form_camera" = "Take a new photo";
+"photo_library" = "Gallery";
+"camera" = "Camera";
+"access_permission_message" = "Cấp cho chúng tôi quyền truy cập vào ảnh của bạn";
+"setting" = "Setting";
+"add_status_placeholder" = "Write to share with us";
+"add_picture_placeholder" = "Add image to your post";

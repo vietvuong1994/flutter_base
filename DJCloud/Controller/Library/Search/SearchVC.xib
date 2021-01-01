@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC" customModule="DJCloud" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSongCloud" destination="FyD-jv-5Pp" id="PRt-mF-tDg"/>
+                <outlet property="btnSongLibrary" destination="4FW-2B-Skl" id="gKI-0R-9iq"/>
+                <outlet property="scrollTypeSearch" destination="0le-xg-V0b" id="Zgj-aU-8DV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBgSearch" destination="Uej-67-bDg" id="dCO-Nu-o1G"/>
+                <outlet property="viewContainer" destination="H9r-QD-nga" id="d9J-yK-ibM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWj-Ea-prU" userLabel="ViewNavigation">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVI-eh-mQ4">
+                            <rect key="frame" x="170.5" y="15.5" width="73.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMA-Fq-glf">
+                            <rect key="frame" x="355" y="3" width="43" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="ffk-oe-CXd"/>
+                            </constraints>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" name="ColorTintApp"/>
+                            </state>
+                            <connections>
+                                <action selector="actionDone:" destination="-1" eventType="touchUpInside" id="AQC-KR-0Ly"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsd-Fb-Hse">
+                            <rect key="frame" x="16" y="3" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="3mE-yX-hex"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionCancel:" destination="-1" eventType="touchUpInside" id="6Pg-TU-PCG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="GMA-Fq-glf" secondAttribute="trailing" constant="16" id="1gn-Dx-Gff"/>
+                        <constraint firstAttribute="height" constant="50" id="Acx-tG-mlX"/>
+                        <constraint firstItem="KVI-eh-mQ4" firstAttribute="centerX" secondItem="OWj-Ea-prU" secondAttribute="centerX" id="CBT-Ku-r3w"/>
+                        <constraint firstItem="GMA-Fq-glf" firstAttribute="centerY" secondItem="OWj-Ea-prU" secondAttribute="centerY" id="Cu8-9L-guf"/>
+                        <constraint firstItem="tsd-Fb-Hse" firstAttribute="leading" secondItem="OWj-Ea-prU" secondAttribute="leading" constant="16" id="hzm-bn-NJX"/>
+                        <constraint firstItem="KVI-eh-mQ4" firstAttribute="centerY" secondItem="OWj-Ea-prU" secondAttribute="centerY" id="ru3-qZ-it5"/>
+                        <constraint firstItem="tsd-Fb-Hse" firstAttribute="centerY" secondItem="OWj-Ea-prU" secondAttribute="centerY" id="yqS-1X-cRR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-wL-ITe">
+                    <rect key="frame" x="0.0" y="149" width="414" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQy-zV-lO1">
+                            <rect key="frame" x="16" y="0.0" width="382" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyD-jv-5Pp">
+                                    <rect key="frame" x="0.0" y="0.0" width="191" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="All DJ Cloud">
+                                        <color key="titleColor" name="ColorTintApp"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionSearchSongCloud:" destination="-1" eventType="touchUpInside" id="iQy-8d-1wY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FW-2B-Skl">
+                                    <rect key="frame" x="191" y="0.0" width="191" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="My Library">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionSearchSongLibrary:" destination="-1" eventType="touchUpInside" id="xRq-Vo-bMW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="FyD-jv-5Pp" firstAttribute="width" secondItem="uQy-zV-lO1" secondAttribute="width" multiplier="1:2" id="8mh-Xm-lvx"/>
+                                <constraint firstAttribute="bottom" secondItem="4FW-2B-Skl" secondAttribute="bottom" id="95e-ui-CwX"/>
+                                <constraint firstItem="FyD-jv-5Pp" firstAttribute="top" secondItem="uQy-zV-lO1" secondAttribute="top" id="9eU-rJ-S1X"/>
+                                <constraint firstAttribute="trailing" secondItem="4FW-2B-Skl" secondAttribute="trailing" id="L4J-ed-bG0"/>
+                                <constraint firstItem="FyD-jv-5Pp" firstAttribute="leading" secondItem="uQy-zV-lO1" secondAttribute="leading" id="Z9J-ov-h3S"/>
+                                <constraint firstAttribute="bottom" secondItem="FyD-jv-5Pp" secondAttribute="bottom" id="omc-w3-pas"/>
+                                <constraint firstItem="4FW-2B-Skl" firstAttribute="leading" secondItem="FyD-jv-5Pp" secondAttribute="trailing" id="qPX-8d-W3m"/>
+                                <constraint firstAttribute="height" constant="40" id="rH2-UE-N4f"/>
+                                <constraint firstItem="4FW-2B-Skl" firstAttribute="top" secondItem="uQy-zV-lO1" secondAttribute="top" id="zsS-Pz-JKL"/>
+                            </constraints>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0le-xg-V0b">
+                            <rect key="frame" x="16" y="40" width="382" height="5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5x-Cj-fNZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="iX2-xd-11p"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYE-Rh-FrH">
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="1"/>
+                                    <color key="backgroundColor" name="ColorTintApp"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="pvp-wm-ylN"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="HYE-Rh-FrH" secondAttribute="bottom" id="2aE-1k-E8P"/>
+                                <constraint firstItem="c5x-Cj-fNZ" firstAttribute="width" secondItem="0le-xg-V0b" secondAttribute="width" id="4sB-6B-6Ga"/>
+                                <constraint firstAttribute="height" constant="5" id="BWh-2b-zLY"/>
+                                <constraint firstItem="c5x-Cj-fNZ" firstAttribute="top" secondItem="0le-xg-V0b" secondAttribute="top" id="Cje-OA-VRD"/>
+                                <constraint firstAttribute="trailing" secondItem="c5x-Cj-fNZ" secondAttribute="trailing" id="PLC-QN-pQe"/>
+                                <constraint firstItem="c5x-Cj-fNZ" firstAttribute="leading" secondItem="0le-xg-V0b" secondAttribute="leading" id="PxC-e2-do9"/>
+                                <constraint firstItem="HYE-Rh-FrH" firstAttribute="width" secondItem="0le-xg-V0b" secondAttribute="width" multiplier="0.49" id="eXg-l6-WWu"/>
+                                <constraint firstItem="HYE-Rh-FrH" firstAttribute="top" secondItem="c5x-Cj-fNZ" secondAttribute="top" id="njL-uS-Y1d"/>
+                                <constraint firstItem="HYE-Rh-FrH" firstAttribute="leading" secondItem="0le-xg-V0b" secondAttribute="leading" id="xc4-Rr-CFg"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0le-xg-V0b" secondAttribute="trailing" constant="16" id="6nr-iR-2qK"/>
+                        <constraint firstItem="0le-xg-V0b" firstAttribute="leading" secondItem="D3W-wL-ITe" secondAttribute="leading" constant="16" id="DBm-ag-H5F"/>
+                        <constraint firstItem="uQy-zV-lO1" firstAttribute="top" secondItem="D3W-wL-ITe" secondAttribute="top" id="Kmo-r6-Coe"/>
+                        <constraint firstAttribute="bottom" secondItem="0le-xg-V0b" secondAttribute="bottom" id="QD3-2v-fBh"/>
+                        <constraint firstItem="uQy-zV-lO1" firstAttribute="leading" secondItem="D3W-wL-ITe" secondAttribute="leading" constant="16" id="SAE-nn-naF"/>
+                        <constraint firstAttribute="trailing" secondItem="uQy-zV-lO1" secondAttribute="trailing" constant="16" id="UzG-sc-ROn"/>
+                        <constraint firstItem="0le-xg-V0b" firstAttribute="top" secondItem="uQy-zV-lO1" secondAttribute="bottom" id="mUF-xe-AMt"/>
+                        <constraint firstAttribute="height" constant="45" id="tbi-8y-LGu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9r-QD-nga">
+                    <rect key="frame" x="0.0" y="199" width="414" height="663"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-67-bDg" customClass="RoundedView" customModule="DJCloud" customModuleProvider="target">
+                    <rect key="frame" x="16" y="101" width="382" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Song name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-bm-0Gh" customClass="TextFieldSearch" customModule="DJCloud" customModuleProvider="target">
+                            <rect key="frame" x="7" y="0.0" width="368" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isShowClear" value="YES"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="iconSearch"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" red="0.56078431370000004" green="0.56078431370000004" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Bwl-6u-sF6"/>
+                        <constraint firstItem="ElA-bm-0Gh" firstAttribute="leading" secondItem="Uej-67-bDg" secondAttribute="leading" constant="7" id="jjE-zF-zct"/>
+                        <constraint firstAttribute="trailing" secondItem="ElA-bm-0Gh" secondAttribute="trailing" constant="7" id="tVJ-5C-GWg"/>
+                        <constraint firstItem="ElA-bm-0Gh" firstAttribute="top" secondItem="Uej-67-bDg" secondAttribute="top" id="vgm-Fs-iLG"/>
+                        <constraint firstAttribute="bottom" secondItem="ElA-bm-0Gh" secondAttribute="bottom" id="x9S-0l-J1R"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="0.25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="ColorBackGround"/>
+            <constraints>
+                <constraint firstItem="Uej-67-bDg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3tH-b0-rDK"/>
+                <constraint firstItem="H9r-QD-nga" firstAttribute="top" secondItem="D3W-wL-ITe" secondAttribute="bottom" constant="5" id="83I-k3-dHH"/>
+                <constraint firstItem="OWj-Ea-prU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8g4-HB-VWz"/>
+                <constraint firstItem="Uej-67-bDg" firstAttribute="top" secondItem="OWj-Ea-prU" secondAttribute="bottom" constant="7" id="AHK-ok-NsR"/>
+                <constraint firstItem="D3W-wL-ITe" firstAttribute="top" secondItem="Uej-67-bDg" secondAttribute="bottom" constant="8" id="C3H-Jz-dzY"/>
+                <constraint firstItem="OWj-Ea-prU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DxK-8r-kXp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="H9r-QD-nga" secondAttribute="bottom" id="NuF-Mb-In5"/>
+                <constraint firstItem="D3W-wL-ITe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dfW-Pj-RFB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uej-67-bDg" secondAttribute="trailing" constant="16" id="eTu-hj-oiC"/>
+                <constraint firstItem="D3W-wL-ITe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kO5-hi-BPL"/>
+                <constraint firstItem="OWj-Ea-prU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="oQA-e7-fbx"/>
+                <constraint firstItem="H9r-QD-nga" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yeh-aT-HFx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H9r-QD-nga" secondAttribute="trailing" id="zKg-5P-Tup"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconSearch" width="18" height="18"/>
+        <namedColor name="ColorBackGround">
+            <color red="0.16899999976158142" green="0.16300000250339508" blue="0.28400000929832458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorTintApp">
+            <color red="0.98400002717971802" green="0.046999998390674591" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SongDisplayVC" customModule="DJCloud" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="aTh-E2-4x0" id="q3b-M1-s6Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLg-lI-4V5">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeG-Sa-C4i">
+                            <rect key="frame" x="5" y="3" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="6yz-RW-w5I"/>
+                                <constraint firstAttribute="height" constant="44" id="mrn-ZH-GRe"/>
+                            </constraints>
+                            <state key="normal" image="iconBackGray"/>
+                            <connections>
+                                <action selector="actionBack:" destination="-1" eventType="touchUpInside" id="S4w-or-YU6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVT-tQ-o0J">
+                            <rect key="frame" x="362" y="3" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="49Z-TN-vaU"/>
+                                <constraint firstAttribute="width" constant="44" id="wCU-rD-MPN"/>
+                            </constraints>
+                            <state key="normal" image="iconMoreGray"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="fVT-tQ-o0J" firstAttribute="centerY" secondItem="BLg-lI-4V5" secondAttribute="centerY" id="HLf-fP-Rsp"/>
+                        <constraint firstItem="eeG-Sa-C4i" firstAttribute="leading" secondItem="BLg-lI-4V5" secondAttribute="leading" constant="5" id="IBc-jm-Qgl"/>
+                        <constraint firstAttribute="trailing" secondItem="fVT-tQ-o0J" secondAttribute="trailing" constant="8" id="XDz-h4-HvK"/>
+                        <constraint firstAttribute="height" constant="50" id="dfl-Mm-o7o"/>
+                        <constraint firstItem="eeG-Sa-C4i" firstAttribute="centerY" secondItem="BLg-lI-4V5" secondAttribute="centerY" id="yV0-zy-zjB"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-E2-4x0" customClass="BaseTableView" customModule="DJCloud" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aTh-E2-4x0" secondAttribute="trailing" id="0EG-k2-jCK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BLg-lI-4V5" secondAttribute="trailing" id="3we-o6-OXU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aTh-E2-4x0" secondAttribute="bottom" id="8je-ms-h5K"/>
+                <constraint firstItem="BLg-lI-4V5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DWw-d4-2w5"/>
+                <constraint firstItem="aTh-E2-4x0" firstAttribute="top" secondItem="BLg-lI-4V5" secondAttribute="bottom" id="Qtm-MN-Gg2"/>
+                <constraint firstItem="BLg-lI-4V5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="i8A-Bg-8o1"/>
+                <constraint firstItem="aTh-E2-4x0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="s0R-EC-CRO"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconBackGray" width="32" height="32"/>
+        <image name="iconMoreGray" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>895795954749-osaanjdrs1jicq58t2lq9tqh9h7gdqtd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.895795954749-osaanjdrs1jicq58t2lq9tqh9h7gdqtd</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>895795954749-gsrbhg2l1o064r823shet69gpsc9av9s.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCOBwoocOaTBkX4odHgDlJS7sTE-_GPZLw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>895795954749</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ngochanguyen.djcloud</string>
+	<key>PROJECT_ID</key>
+	<string>djcloud-1605760857541</string>
+	<key>STORAGE_BUCKET</key>
+	<string>djcloud-1605760857541.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:895795954749:ios:86194fbe6944c945841654</string>
+	<key>DATABASE_URL</key>
+	<string>https://djcloud-1605760857541.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="SongListCell" customModule="DJCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image5" translatesAutoresizingMaskIntoConstraints="NO" id="j1X-Pi-xRV">
+                        <rect key="frame" x="16" y="6" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="j1X-Pi-xRV" secondAttribute="height" id="85M-kg-kJj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Hbm-sx-JKN">
+                        <rect key="frame" x="93" y="20" width="256" height="37.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Havana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5E-sJ-dUo">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camila Cabello ft. Young Thug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25H-sC-APi">
+                                <rect key="frame" x="0.0" y="23" width="169" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpW-Ca-RH4">
+                        <rect key="frame" x="354" y="27.5" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="O9r-ZS-Xei"/>
+                        </constraints>
+                        <state key="normal" image="iconPlayLaterGray"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRR-hf-mpW">
+                        <rect key="frame" x="394" y="27.5" width="30" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="4C5-3N-IIi"/>
+                        </constraints>
+                        <state key="normal" image="iconMore"/>
+                        <connections>
+                            <action selector="actionMoreMenu:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PfW-yU-OeV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GpW-Ca-RH4" firstAttribute="leading" secondItem="Hbm-sx-JKN" secondAttribute="trailing" constant="5" id="78i-CS-HF6"/>
+                    <constraint firstItem="j1X-Pi-xRV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="9y9-yr-j03"/>
+                    <constraint firstAttribute="trailing" secondItem="yRR-hf-mpW" secondAttribute="trailing" constant="12" id="D98-xM-ERM"/>
+                    <constraint firstItem="j1X-Pi-xRV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Fuw-tN-kCj"/>
+                    <constraint firstItem="Hbm-sx-JKN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="J3e-mt-O02"/>
+                    <constraint firstAttribute="bottom" secondItem="j1X-Pi-xRV" secondAttribute="bottom" constant="6" id="TEC-Kb-qat"/>
+                    <constraint firstItem="Hbm-sx-JKN" firstAttribute="leading" secondItem="j1X-Pi-xRV" secondAttribute="trailing" constant="12" id="U0m-op-cnB"/>
+                    <constraint firstItem="GpW-Ca-RH4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dIy-Y6-gZ3"/>
+                    <constraint firstItem="yRR-hf-mpW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mRg-VB-737"/>
+                    <constraint firstItem="yRR-hf-mpW" firstAttribute="leading" secondItem="GpW-Ca-RH4" secondAttribute="trailing" constant="10" id="pvx-nm-yXD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgImage" destination="j1X-Pi-xRV" id="D16-pn-OwB"/>
+                <outlet property="lbSubTitle" destination="25H-sC-APi" id="lP7-xC-Gy4"/>
+                <outlet property="lbTitle" destination="l5E-sJ-dUo" id="2v0-xD-60H"/>
+            </connections>
+            <point key="canvasLocation" x="221.73913043478262" y="127.56696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconMore" width="16" height="16"/>
+        <image name="iconPlayLaterGray" width="18" height="16"/>
+        <image name="image5" width="64" height="64"/>
+    </resources>
+</document>
