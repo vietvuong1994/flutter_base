@@ -1,6 +1,9 @@
 import 'package:DJCloud/commons/AppRouter.dart';
+import 'package:DJCloud/providers/musicPlayerModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -21,12 +24,20 @@ class _MyAppState extends State<MyApp> {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => MusicPlayerModel()),
+      ],
+      child: MaterialApp(
       themeMode: ThemeMode.system,
       title: 'DJ Cloud App',
-      initialRoute: 'qrScan',
+      initialRoute: 'home',
       debugShowCheckedModeBanner: false,
       onGenerateRoute: AppRouter.generateRoute,
+    ),
     );
+    
+    
   }
 }

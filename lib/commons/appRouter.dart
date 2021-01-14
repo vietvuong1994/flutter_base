@@ -8,7 +8,7 @@ class AppRouter {
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     var routes = <String, WidgetBuilder>{
-      "home": (ctx) => HomeUi(settings.arguments),
+      "home": (ctx) => HomeUI(settings.arguments),
       "qrScan": (ctx) => QRScanUI(settings.arguments),
     };
     WidgetBuilder builder = routes[settings.name];

@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class ApiBaseHelper {
-  final String _baseUrl = "";
+  final String _baseUrl = "http://upload.djcloud.vn/api/v1/";
   final GlobalKey<State> _keyLoader = new GlobalKey<State>();
 
   Future<dynamic> get(BuildContext context, String url) async {
